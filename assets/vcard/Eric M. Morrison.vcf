@@ -1,0 +1,20 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.11.4//EN
+N:Morrison;Eric;M.;;
+FN:Eric M. Morrison
+ORG:Washington Square Realty Capital\, LLC;
+TITLE:Senior Analyst
+EMAIL;type=INTERNET;type=HOME;type=pref:ericmorrison11@gmail.com
+EMAIL;type=INTERNET;type=WORK:em@wsqcap.com
+TEL;type=CELL;type=VOICE;type=pref:(609) 517-7071
+TEL;type=WORK;type=VOICE:2675469022
+item1.ADR;type=WORK;type=pref:;;1315 Walnut Street\nSuite 1108;Philadelphia;PA;19107;
+item1.X-ABADR:us
+ADR;type=HOME:;;627 N. 18th Street;Philadelphia;PA;19130;
+URL;type=WORK;type=pref:www.wsqcap.com
+BDAY:1985-11-28
+UID:ZIPZ-07DC030F-000A-151A-FF2C-0073D
+X-ABUID:E74E0A93-2EC7-4F8B-927B-94B1F349C9E1:ABPerson
+X-APPLE-OL-MAPPING-INFO:1
+END:VCARD

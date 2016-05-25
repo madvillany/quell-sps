@@ -1,0 +1,193 @@
+// Responsive image
+//
+// Keep images from scaling beyond the width of their parents.
+@mixin img-responsive($display: block) {
+  display: $display;
+  width: 100% \9; // Force IE10 and below to size SVG images correctly
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+}
+
+@mixin border-radius($radius) {
+    -ms-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+} 
+@mixin box-shadow($x: 0, $y: 0, $radius: 4px, $spread: 0, $color: rgba(0,0,0,0.5)) {
+    -o-box-shadow: $x $y $radius $spread $color; 
+    -ms-box-shadow: $x $y $radius $spread $color;
+    -moz-box-shadow: $x $y $radius $spread $color;
+    -webkit-box-shadow: $x $y $radius $spread $color;
+    box-shadow: $x $y $radius $spread $color; 
+}
+@mixin gradients($first, $second) {
+    background-color: $first;
+    background-image: -o-linear-gradient(top, $first 0%, $second 100%);
+    background-image: -ms-linear-gradient(top, $first 0%, $second 100%);
+    background-image: -moz-linear-gradient(top,  $first,  $second);
+    background-image: -webkit-gradient(linear, left top, left bottom, from($first), to($second));
+    background-image: linear-gradient(top, $first 0%, $second 100%);
+}
+@mixin box-sizing($type: border-box) {
+    box-sizing: $type; 
+    -o-box-sizing: $type; 
+    -ms-box-sizing: $type;
+    -moz-box-sizing: $type;
+    -webkit-box-sizing: $type;
+}
+@mixin opacity($opac) {
+    filter: alpha(opacity=$opac * 100);
+    -ms-filter: alpha(opacity=$opac * 100);
+    -moz-opacity: $opac;
+    -webkit-opacity: $opac;
+    opacity: $opac;
+}
+@mixin transition($value) {
+    -o-transition: $value;
+    -moz-transition: $value;
+    -webkit-transition: $value;
+    transition: $value;
+}
+@mixin transition-dur($value) {
+    -o-transition-duration: $value;
+    -moz-transition-duration: $value;
+    -webkit-transition-duration: $value;
+    transition-duration: $value;
+}
+@mixin rotate($deg, $orig: 50% 50%) {
+    -o-transform: rotate(#{$deg});
+    -o-transform-origin: $orig;
+    -ms-transform: rotate(#{$deg});
+    -ms-transform-origin: $orig;
+    -moz-transform: rotate(#{$deg});
+    -moz-transform-origin: $orig;
+    -webkit-transform: rotate(#{$deg});
+    -webkit-transform-origin: $orig;
+    transform: rotate(#{$deg});
+    transform-origin: $orig;
+}
+@mixin animation($options) {
+    -ms-animation: $options;
+    -moz-animation: $options;
+    -webkit-animation: $options;
+    animation: $options;
+}
+@mixin placeholder($color) {
+    input::-webkit-input-placeholder, 
+    textarea::-webkit-input-placeholder,
+    input:-moz-placeholder, 
+    textarea:-moz-placeholder,
+    input:-ms-input-placeholder, 
+    textarea:-ms-input-placeholder {
+        color: $color;
+    }
+}
+
+// User select
+// For selecting text on the page
+@mixin user-select($select) {
+  -webkit-user-select: $select;
+     -moz-user-select: $select;
+      -ms-user-select: $select; // IE10+
+          user-select: $select;
+}
+
+// WebKit-style focus
+@mixin tab-focus() {
+  // Default
+  outline: thin dotted;
+  // WebKit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Button sizes
+// -------------------------
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+
+// Button variants
+// -------------------------
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $color;
+    background-color: darken($background, 8%);
+        border-color: darken($border, 12%);
+  }
+  .open & { &.dropdown-toggle {
+    color: $color;
+    background-color: darken($background, 8%);
+        border-color: darken($border, 12%);
+  } }
+  &:active,
+  &.active {
+    background-image: none;
+  }
+  .open & { &.dropdown-toggle {
+    background-image: none;
+  } }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+@mixin hookmeup-with-an-arrow($whats-the-path){
+
+	.arrow {
+	    background:url($whats-the-path) no-repeat top center;
+	    width:8px;
+	    height:13px;
+	    display:inline-block;
+	    padding-left:5px;
+	    z-index:999;
+	}
+}
+
+@mixin hookmeup-with-an-icon($whats-the-path){
+	    background:url($whats-the-path) no-repeat top center;
+	    width:22px;
+	    height:18px;
+	    display:inline-block;
+	    padding-right:5px;
+	    z-index:999;
+	
+}

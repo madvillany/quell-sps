@@ -1,0 +1,19 @@
+body{
+	background:#0d793d;
+	color:#fff;
+}
+.content{
+	position:absolute;
+	left:150px;
+	top:50%;
+	margin-top:-100px;
+	width:600px;
+	height:240px;
+}
+.logo{
+	margin-bottom:40px;
+	width:600px;
+	height:110px;
+	background:url(../img/logo.png);
+}
+.info{margin-left:143px;}

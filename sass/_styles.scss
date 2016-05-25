@@ -1,0 +1,570 @@
+
+// ****************** HEADER SECTION ************************
+.navbar-wraper {
+	width: 100%;
+	z-index: 99999;
+	position: absolute;
+	margin-top: 50px;
+
+
+	#wsrc-navbar {
+		background-color: #fff;
+		border: 0;
+		min-height: 50px;
+		padding: 10px 20px;
+		
+	}
+}
+
+.navbar-brand {
+	padding: 0;
+	width: 300px;
+	height: 70px;
+
+	@media (max-width: 388px) {
+		width: 200px;
+		height: 40px;
+
+	}
+}
+
+.navbar {
+	margin-bottom: 0px;
+	cursor: pointer;
+	border-radius: 0;
+}
+
+.navbar-default .navbar-nav {
+	list-style: none;
+	margin-top: 30px;
+
+	li {
+		a {
+			font-size: 14px;
+			color: $lite-gray;
+			text-transform: uppercase;
+			padding: 0 10px;
+			cursor: pointer;
+
+			&:hover, &:focus, &:active{
+				text-decoration: none;
+				color: $green;
+			}
+
+			&.current {
+				color: $green;
+			}
+		
+		}
+	}
+
+	.active {
+		a, a:hover, a:focus {
+			color: $green;
+			background-color: #fff;
+		};
+	}
+}
+
+.top-navigation {
+	float: right;
+
+	@media (max-width: 768px) {
+		float: none;
+	}
+}
+
+
+
+
+// ****************** HOME PAGE CONTENT ************************
+.cols-wraper-4 {
+	margin-top: 80px;
+}
+
+.col-news {
+	width: 21.33333333%;
+	height: 340px;
+	background-color: #fff;	
+	float: left;
+	margin-right: 2%;
+	padding: 20px 20px;
+	position: relative;
+	margin-top: 20px;
+
+	span {
+		position: absolute;
+		bottom: 20px;
+	}
+
+
+	h6 {
+    	font-size: 15px;
+    	text-transform: inherit;
+    	line-height: 18px;
+    	margin-top: 20px;
+	}	
+
+	@media (min-width: 480px) and (max-width: 980px) { 
+		width: 48%;
+		margin-right: 2%;
+	}
+
+	@media (max-width: 480px){ 
+		width: 100%;
+		margin-right: 0;
+	}
+
+	a {
+		font-size: 15px;
+	}
+}
+
+#rate-widget-wraper {
+	width: 30%;
+	height: 340px;
+	background-color: #fff;
+	float: left;
+	margin-top: 20px;
+
+	@media (min-width: 480px) and (max-width: 980px) { 
+		width: 48%;
+		margin-right: 2%;
+	}
+
+	@media (max-width: 620px){ 
+		width: 100%;
+		margin-right: 0;
+	}
+} 
+
+// ****************** ABOUT PAGE CONTENT ************************
+#about-page {
+	.content-wraper {
+	    p {
+	        font-size: 24px;
+	        line-height: 32px;
+	        color: $lite-gray;
+	    }
+
+	    span {
+	        color: $green;
+	    }
+	}
+}
+
+
+
+// ****************** SERVICES PAGE CONTENT ************************
+.site-content {
+	ul {
+		list-style: none;
+		padding: 0 ;
+	}
+}
+
+.col-service {
+	padding: 0 40px 30px 0;
+
+	ul {
+		margin-top: 20px;
+		color: $lite-gray;
+	}
+
+	h5 {
+    	color: $green;
+    	text-transform: uppercase;
+    	font-weight: 800;
+    	min-height: 30px;
+	}
+}
+
+.team-members {
+	a {
+		color: $green;
+		font-size: 70px;
+		line-height: 75px;
+		text-transform: uppercase;
+
+		@media (max-width: 768px) {
+			font-size: 45px;
+			line-height: 60px;
+		}
+
+		@media (max-width: 380px) {
+			font-size: 24px;
+			line-height: 26px;
+		}
+	}
+}
+
+// ****************** TRANSACTION PROFILES PAGE CONTENT ************************
+#transaction-title {
+	width: 50%;
+}
+
+.page-title {
+	padding: 0;
+}
+
+.items-wraper {
+	padding: 0;
+}
+
+.col-item {
+	margin-bottom: 40px;
+	height: 354px;
+
+	@media (min-width: 989px) and (max-width: 1200px) { 
+		margin-bottom: 15px;
+		height: 330px;
+	}
+
+	@media (min-width: 600px) and (max-width: 725px) { 
+		margin-bottom: 15px;
+		height: 300px;
+	}
+
+	@media (min-width: 480px) and (max-width: 599px) { 
+		margin-bottom: 15px;
+		height: 270px;
+	}
+
+	.item-image {
+		width: 100%;
+		height: 240px;
+		overflow: hidden;
+		margin-bottom: 20px;
+
+		@media (min-width: 989px) and (max-width: 1200px) { 
+			height: 200px;
+		}
+
+		@media (min-width: 600px) and (max-width: 725px) { 
+			height: 170px;
+		}
+
+		@media (min-width: 480px) and (max-width: 599px) { 
+			height: 130px;
+		}
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	.desaturate {
+		filter: gray; /* IE6-9 */
+  		filter: url('../js/filters.svg#grayscale'); /* Firefox 3.5+ */
+  		-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+	}
+
+	/* Disable grayscale on hover */
+
+	img:hover {
+  		filter: none;
+  		-webkit-filter: grayscale(0);
+	}
+
+	h8 {
+		font-weight: 600;
+	}
+
+	p {
+		font-size: 16px;
+		margin: 0;
+		color: $lite-gray;
+	}
+}
+
+// ****************** CONTACT PAGE CONTENT ************************
+
+.company-contact {
+
+	min-height: 200px;
+	padding: 10px 0;
+	
+	p {
+		font-size: 20px;
+		color: #fff;
+		text-transform: uppercase;
+		margin-top: 30px;
+	}
+	a{
+		color: #fff;
+		font-size: 20px;
+		font-weight: bold;
+	}
+}
+
+#contact-info {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 0;
+	
+
+	.col-member{
+		width: 18.4%;
+		height: 200px;
+		background-color: #fff;	
+		position: relative;
+		float: left;
+		margin-top: 20px;
+		margin-right: 2%;
+		padding: 20px 20px;
+
+		h7 {
+			height: 45px;
+			display: inline-block;
+			color: $green;
+		}
+		
+		p {
+			color: $lite-gray;
+			font-size: 12px;
+			margin-top: 15px;
+
+		}
+
+		a {
+			color: $lite-gray;
+			font-size: 12px;
+			
+
+		}
+
+		.vcard-link {
+			display: block;
+			margin-top: 10px;
+			color: $green;
+		}
+
+		@media (min-width: 480px) and (max-width: 980px) { 
+			width: 48%;
+			margin-right: 2%;
+		}
+
+		@media (max-width: 480px){ 
+			width: 100%;
+			margin-right: 0;
+		}
+
+	}
+	
+
+	.last {
+		margin-right: 0;	
+	}
+}
+
+
+
+
+// ****************** TEAM MEMBER PAGE CONTENT ************************
+
+
+.profile-article-wraper{
+	article {
+		color: $lite-gray;
+	}
+	
+	.two-column {
+		-moz-column-count: 2;
+		-moz-column-gap: 70px;
+		-moz-column-rule: none;
+		-webkit-column-count: 2;
+		-webkit-column-gap: 70px;
+		-webkit-column-rule: none;
+		column-count: 2;
+		column-gap: 70px;
+		column-rule: none;
+
+		@media (max-width: 750px) {
+			-moz-column-count: 1;
+			-moz-column-gap: 70px;
+			-moz-column-rule: none;
+			-webkit-column-count: 1;
+			-webkit-column-gap: 70px;
+			-webkit-column-rule: none;
+			column-count: 1;
+			column-gap: 70px;
+			column-rule: none;
+		}	
+	}
+}
+
+.member-intro {
+	font-size: 20px;
+	color: $lite-gray;
+	padding: 0;
+
+	span {
+		color: $green;
+	}
+
+
+	@media (min-width: 480px) and (max-width: 990px) { 
+			width: 70%;
+			float: left;
+	}
+
+	@media (max-width: 480px){
+			width: 100%;
+			margin-top: 15px;
+	}
+}
+
+.go-back-button {
+	width: 70px;
+	height: 70px;
+	border: 1px solid #B2B5B8;
+	float: right;
+	padding-top: 15px;
+}
+
+.title-wraper {
+	h3 {
+		padding: 0;
+	}
+}
+
+.member-brief-wraper {
+	padding-left: 0;
+
+	@media (max-width: 990px) { 
+		margin-top: 30px;
+	}
+}
+
+
+.headshot {
+	padding-left: 0;
+	width: 100px;
+	height: 135px;
+	float: left;
+
+	@media (max-width: 480px){
+		float: none;
+	}
+}
+
+// ****************** TRANSACTION PROFILE DETAIL PAGE CONTENT ************************
+
+
+@media (min-width: 480px) and (max-width: 768px) { 
+	.col-item {
+		width: 50%;
+	}
+
+}
+
+.left-content {
+	p {
+		color: $lite-gray;
+	}
+
+	span {
+		color: $green;
+		text-transform: uppercase;
+	}
+
+	 .challenge, .solution{
+        span {
+            color: $lite-gray;
+        }
+    }
+}
+
+
+.carousel-indicators {
+	display: inline-block;
+	font-size: 20px;
+	text-indent: 0;
+	text-align: left;
+
+	position: relative;
+	float: left;
+
+	left: 0;
+	width: 200px;
+	margin-top: 40px;
+	margin-left: 0;
+	
+	li {
+		cursor: pointer;
+		color: $lite-gray;
+		text-indent: 0;
+		padding: 0 30px;
+		background: transparent;
+		border: 0;
+	}
+
+	.active {
+		color: $green;
+		background: transparent;
+
+	}
+}
+
+
+.secondary-page {
+	.navbar-wraper {
+		width: 100%;
+		position: relative;
+	}
+
+	.content-wraper {
+		margin-top: 100px;
+		padding-bottom: 100px;
+	}
+}
+
+.list-items{
+  	margin-left:20px;
+  	margin-bottom: 15px;
+  	float: left;
+}
+
+.list-items li{
+	list-style: circle;
+	color: $lite-gray;
+}
+
+
+// ****************** NEWS PAGE CONTENT ************************
+.news-post {
+	margin-bottom: 65px;
+
+	h4 {
+		font-size: 24px;
+    	color: $lite-gray;
+    	text-transform: capitalize;	
+    }
+
+	a {
+		font-size: 24px;
+	}
+
+}
+
+.news-brief {
+	font-size: 24px;
+	color: $lite-gray;
+}
+
+#career-page {
+
+	p {
+		font-size: 20px;
+		color: $lite-gray;
+	}
+
+	a {
+		font-size: 20px;
+		color: $green;
+	}
+
+
+}

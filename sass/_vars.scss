@@ -1,0 +1,76 @@
+//Set global variable to use in style definitions.
+$image-path: "../img";
+
+//Brand colors
+$lite-gray: #666 !default;
+$green: #00974B !default;
+
+$body-bg: #fff !default;
+
+//Primary nav
+$nav-font-type: "ff-dax-web-pro", arial;
+
+//Dax Medium
+$nav-font-weight: 600;
+$nav-font-size: 16px;
+
+$text-color: #666 !default;
+$link-color: $lite-gray !default;
+
+$h1-font-type: "ff-dax-web-pro-condensed", arial;
+
+//Dax Condensed Light
+$h1-font-size: 38px;
+$h1-font-weight: 400;
+$h1-font-color: white;
+
+$h2-font-type: "ff-dax-web-pro", arial;
+
+//Dax Medium
+$h2-font-weight: 600;
+$h2-font-size: 18px;
+$h2-font-color: #6a6a6a;
+
+$font-size-base: 14px !default;
+$font-size-large: 18px !default;
+
+$line-height-base: 1.42857 !default;
+
+// 20/14
+$line-height-large: 1.33 !default;
+
+$body-copy-font-type: arial;
+$body-copy-font-size: 16px;
+$body-copy-font-color: $text-color;
+
+$padding-base-vertical: 6px !default;
+$padding-base-horizontal: 12px !default;
+
+$padding-large-vertical: 10px !default;
+$padding-large-horizontal: 16px !default;
+
+$widget-title-font-type: "ff-dax-web-pro-condensed", arial;
+
+//Dax Condensed Regular
+$widget-title-font-size: 20px;
+$widget-title-font-color: white;
+
+$widget-copy-font-type: arial;
+$widget-copy-font-size: 14px;
+$widget-copy-font-color: white;
+
+$slider-title-font-type: "ff-dax-web-pro-condensed", arial;
+
+//Dax Condensed Light
+$slider-title-font-size: 38px;
+$slider-title-font-color: #989898;
+
+$slider-copy-font-type: arial;
+$slider-copy-font-size: 14px;
+$slider-copy-font-color: #989898;
+
+$btn-copy-font-type: "ff-dax-web-pro-condensed", arial;
+$btn-copy-font-size: 20px;
+
+$border-radius-base: 12px !default;
+$border-radius-large: 6px !default;

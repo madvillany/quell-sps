@@ -1,0 +1,19 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.11.2//EN
+N:Franchi;Anthony;;;
+FN:Anthony Franchi
+ORG:Washington Square Realty Capital;
+TITLE:Senior Director - National Originations
+EMAIL;type=INTERNET;type=WORK;type=pref:af@wsqcap.com
+TEL;type=CELL;type=VOICE;type=pref:(856) 812-1483
+TEL;type=WORK;type=VOICE:2675469023
+ADR;type=WORK;type=pref:;;1315 Walnut Street\nSuite 1108;Philadelphia;PA;19107;
+NOTE:Conference Call Bridge Line:\n267.546.9030  | Room 9023# |  1315#\n\n\n\n
+URL;type=WORK;type=pref:www.wsqcap.com
+item1.URL:www.linkedin.com/in/anthonyfranchi
+item1.X-ABLabel:_$!<Other>!$_
+CATEGORIES:Washington Square Realty Capital
+UID:7122A5C8-B71A-4B4D-984D-9333B0EFA855
+X-ABUID:7F18847A-A6D8-4825-B56D-0B18D0570991:ABPerson
+END:VCARD
